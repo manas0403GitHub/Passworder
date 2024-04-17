@@ -22,7 +22,7 @@ while ($true) {
 
     Clear-Host
 
-    $password = Read-Host "Enter the code" -Prompt
+    $password = Read-Host "Enter the code"
     if ($password -eq $number -or $password -eq $word -or $password -eq $symbol){
         Write-Host "Correct!"
         Write-Host "Wait for the next code..."
@@ -37,7 +37,7 @@ while ($true) {
         Write-Host "Game Over!"
         Write-Host "Your Score is $score/5"
 
-        $again = Read-Host "Again?Y/N" -Prompt
+        $again = Read-Host "Again?Y/N"
         if ($again -eq "Y"){
             Write-Host "Reloading Game..."
             Start-Sleep -Seconds 1
